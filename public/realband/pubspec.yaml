@@ -1,0 +1,11 @@
+name: realband
+description: A sample WebUI application
+dependencies:
+  browser: any
+  forms:
+    path: /Users/littleworld/dart/forms
+  js: any
+  logging: any
+  logging_handlers: any
+  unittest: any
+  web_ui: any

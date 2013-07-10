@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="import" href="login.html">    
+  </head>
+ 
+  <body> 
+  <element name="x-navbar" constructor="Navbar" extends="span">
+    <template>  
+      <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="navbar-inner">
+          <div class="container-fluid">
+              <a class="brand" href="">Zoeken</a>
+            <form class="navbar-search">
+              <input type="text" class="search-query" placeholder="Zoek op naam">
+            </form>
+            <form class="navbar-form pull-left">
+              <div class="search-select"> 
+              woonplaats: <select class="span3" name="woonplaats" on-change="change_woonplaats($event)" >
+              <option>---</option>
+              </select></div>
+            <div class="search-select">
+              instrument: <select class="span3" name="instrument" on-change="change_instrument($event)" >
+              <option>---</option>
+              </select></div>
+          <div class="search-select">
+            opleiding: <select class="span3" name="opleiding" on-change="change_opleiding($event)" >
+              <option>---</option>
+              </select></div>
+               
+            </form>
+            
+           
+          
+            
+       
+            <x-login></x-login>
+          </div>
+        </div>
+      </div>
+      <style>
+       .search-select{
+          margin-left: 60px;
+          display: inline-block;
+          color: #ccc;
+        }
+        
+        .navbar-search .search-query {
+           margin-left: 30px;
+          margin-left: 60px;
+        }
+      </style>
+    </template>
+    <script type="application/dart" src="zoek-bar.dart"></script>
+  </element>
+  </body>
+</html>

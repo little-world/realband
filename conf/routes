@@ -1,0 +1,26 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index
+PUT		/register					controllers.RegisterController.register
+PUT		/email-check				controllers.RegisterController.emailCheck
+PUT		/student/saveContent		controllers.StudentController.upsertContent
+PUT		/student/deleteContent		controllers.StudentController.deleteContent
+POST	/student/html				controllers.StudentController.getHtml
+GET		/student/:id				controllers.StudentController.findStudent(id: String)
+GET		/students					controllers.StudentController.findAllStudents
+GET		/instruments/:id			controllers.StudentController.findInstruments(id: String)
+GET		/woonplaatsen				controllers.ZoekController.findWoonplaatsen
+GET		/zoek/woonplaats/:plaats	controllers.ZoekController.findWoonplaats(plaats: String)
+GET		/instrumenten				controllers.ZoekController.findInstrumenten
+GET		/zoek/instrument/:inst		controllers.ZoekController.findByInstrument(inst: String)
+GET		/opleidingen				controllers.ZoekController.findOpleidingen
+GET		/zoek/opleiding/:opl		controllers.ZoekController.findByOpleiding(opl: String)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET     /web/*fil               	controllers.Assets.at(path="/public/realband/web", fil)
+GET     /test/*fil               	controllers.Assets.at(path="/public/realband/test", fil)
+GET     /bootstrap/*fil             controllers.Assets.at(path="/public/realband/web/out/bootstrap", fil)

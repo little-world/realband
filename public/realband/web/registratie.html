@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>registration</title>
+    
+    <style>
+    
+     .container-fluid, .row-fluid, .column, .block {
+            height: 100%;
+      }
+      
+ 
+      select {
+        width: 315px;      
+ 
+        font-size: 12pt;
+        margin-bottom: 4px;    
+      }
+      
+
+      
+      form { 
+        padding-top: 30px;
+      }
+      
+      #register {
+        position: relative;
+        top: 60px;
+      }
+      
+      #section2 h3 {
+      text-align: center;
+      }
+    </style> 
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">    
+    <link rel="stylesheet" href="realband.css">
+    
+    <link rel="import" href="package:forms/textfield.html">
+    <link rel="import" href="package:forms/prepend-textfield.html">
+    <link rel="import" href="package:forms/emailfield.html">
+    <link rel="import" href="package:forms/passwordfield.html">
+    <link rel="import" href="package:forms/checkboxlist.html">
+  </head>
+ 
+  <body>  
+     <section>   
+      <div class="container-fluid">
+        <div class="hero-unit">
+          <h1>Realband</h1>
+          <h3>aanmelden student</h3>
+        </div>
+      </div>
+     </section>
+     
+      
+      <section id="section2">
+        <div class="container-fluid">
+          <div class="row-fluid">
+            <div class="span6 column">
+              <div class="block" id="student">
+                <h3>student gegevens</h3>
+                <form class="form-horizontal" id="login">
+                  <div is="text-field" name="naam" mir="{{'url'}}"></div>
+                  <div is="email-field" name="email"></div>
+                  <div is="password-field" name="password"></div>
+                  <div is="text-field" name="woonplaats"></div>
+                  <div is="text-field" name="telefoon"></div>
+                </form>
+              </div>
+            </div>
+            <div class="span6 column">
+              <div class="block">
+                <h3>muzikant gegevens</h3>
+                <form class="form-horizontal" id="profile">
+                   <div is="text-field" name="opleiding"></div>
+                   <div is="checkbox-list" name="instrument"></div>
+                   <div is="prepend-text-field" name="url" prepend="http://realband.nl/"></div>
+                    <div class="controls">  
+                      <a class="btn btn-primary btn-large" id="register" on-click="register()">Aanmelden</a>
+                    </div>
+                </form>
+              </div>
+            </div>
+          <div>
+        </div>   
+        </div>
+        </div>
+      </section>
+    <script type="application/dart" src="registratie.dart"></script>
+
+  </body>
+</html>

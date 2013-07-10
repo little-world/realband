@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>homepage</title>
+    
+    <style>
+      .container-fluid, .row-fluid, .column, .block {
+        height: 100%;
+      }
+    </style> 
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">    
+    <link rel="stylesheet" href="realband.css">
+    <link rel="import"   href="visitekaart.html">
+   <link rel="import"   href="html-block.html">
+ 
+  </head>
+ 
+  <body>  
+    <div id="fb-root"></div>
+  
+       <section>   
+        <div class="container-fluid">
+          <div class="hero-unit">
+             <div class="xxx" on-click="edit()">   edit
+          </div>
+            <span is="visite-kaart" class="visite-kaart" student="{{hash}}" height="{{height}}"></span>
+             
+         
+          </div>
+        </div>
+       </section>
+       <section>
+          <div class="container-fluid">
+            <div class="row-fluid">
+              <div class="span6 column">
+                 <div is="html-block" class="html-block" row="{{1}}" col="{{1}}"></div>
+              </div>
+              <div class="span6 column">
+                <div is="html-block" class="html-block" row="{{1}}" col="{{2}}"></div>
+              </div>
+            </div>
+          </div>  
+        </section>
+        
+        <section>
+          <div class="container-fluid">
+            <div class="row-fluid">
+              <div class="span4 column">
+               <div is="html-block" class="html-block" row="{{2}}" col="{{1}}"></div>
+              </div>
+              <div class="span4 column">
+                <div is="html-block" class="html-block" row="{{2}}" col="{{2}}"></div>
+              </div>
+              <div class="span4 column">
+                <div is="html-block" class="html-block" row="{{2}}" col="{{3}}"></div>
+              </div>
+            </div>
+          </div>  
+        </section>
+         <style>
+     
+          .xxx {
+          width: 50px;
+            float: right;
+            display: inline-block;
+            text-align: center;
+            border-radius: 5px;
+            color: #ccc;
+            font-weight: bold;
+            opacity: .4;
+            background-color: #eee;
+          }
+          
+          .xxx:hover {
+             opacity: .8;
+             cursor: pointer;
+             color: #555;
+          }
+          
+        </style>
+      
+      <script type="application/dart" src="student.dart"></script>
+ 
+  </body>
+</html>

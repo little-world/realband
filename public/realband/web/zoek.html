@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>homepage</title>
+    
+    
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">    
+    <link rel="stylesheet" href="realband.css">
+    <link rel="import"   href="visitekaart.html">
+    <link rel="import"   href="zoek-bar.html">
+ 
+  </head>
+ 
+  <body> 
+  <div is="x-navbar"></div> 
+        <section>
+          <div class="container-fluid">
+            <div class="row-fluid">
+                 <template iterate="cols in students">
+                    <div class="span3 column">
+                     <template iterate="std in cols">
+                      <div is="visite-kaart" student="{{std}}"></div>
+                     </template>
+                   </div>
+                 </template>
+              </div>
+          </div>  
+        </section>
+      <style>
+        section {
+           position: relative;
+           top: 40px;
+        }
+        
+      </style>
+      
+      <script type="application/dart" src="zoek.dart"></script>
+        <script src="packages/browser/dart.js"></script>
+ 
+
+  </body>
+</html>

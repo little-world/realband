@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>editor</title>
+    <link rel="import" href="block-editor.html">    
+  </head>
+ 
+  <body>   
+   <element name="html-block" constructor="HtmlBlock" row="{{row}}" col="{{col}}" extends="div">
+      <template>
+        <div class="block">
+          <div class="content"></div>
+         
+          <div class="btn btn-primary btn-large xxxx" on-click="submit($event)">
+            wijzig content
+          </div>
+          <div is="block-editor" id="block-editor"></div>
+        </div>
+        <style>
+          #block-editor {
+            display: none;
+          }
+          
+          .content {
+            height: 100%;
+          }
+          
+          .xxxx {
+            width: 200px;
+            position: absolute;
+            z-index: 300;
+            display: none;
+          }
+          
+          .block {
+            overflow: auto;
+          }
+        </style>  
+      </template>
+      <script type="application/dart" src="html-block.dart"></script>
+    </element>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+
+
+pages
+
+registration by admin
+userpage
+userpage edit
+
+searchpage
+   -filter:  instrument
+   			 woonplaats
+   			 opleiding
+   visitekaartjes   			 
+
