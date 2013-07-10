@@ -16,6 +16,7 @@ dist
 /.project
 /RUNNING_PID
 /.settings
+/.git
 
 public/images
 public/realband/packages
