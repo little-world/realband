@@ -5,6 +5,8 @@
 # Home page
 GET     /                           controllers.Application.index
 PUT		/register					controllers.RegisterController.register
+PUT		/avatar						controllers.ImageController.saveAvatar
+GET		/avatar/:id					controllers.ImageController.findAvatar(id: String)
 PUT		/email-check				controllers.RegisterController.emailCheck
 PUT		/student/saveContent		controllers.StudentController.upsertContent
 PUT		/student/deleteContent		controllers.StudentController.deleteContent
@@ -21,6 +23,7 @@ GET		/zoek/opleiding/:opl		controllers.ZoekController.findByOpleiding(opl: Strin
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET     /web/out/student	        controllers.StudentController.studentPage
 GET     /web/*fil               	controllers.Assets.at(path="/public/realband/web", fil)
 GET     /test/*fil               	controllers.Assets.at(path="/public/realband/test", fil)
 GET     /bootstrap/*fil             controllers.Assets.at(path="/public/realband/web/out/bootstrap", fil)

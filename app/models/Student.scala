@@ -51,6 +51,15 @@ case class HtmlBlock (
   col: Int
 )
 
+case class Image(
+	id: Option[Int] = None, 
+	studentId : Int, 
+	naam: String, 
+	filename: String, 
+	blob: Array[Byte]
+)
+
+
 
 object Students extends Table[Student]("STUDENT") {
   def id = column[Int]("ID", O.PrimaryKey,  O.AutoInc)
@@ -85,4 +94,14 @@ object HtmlBlocks extends Table[HtmlBlock]("HTML_BLOCK") {
   
  
   def * = studentId ~ website ~ content ~ row ~ col <> (HtmlBlock.apply _, HtmlBlock.unapply _)
+}
+
+object Images extends Table[Image]("IMAGE") {
+  def id = column[Int]("ID", O.PrimaryKey, O.AutoInc)
+  def studentId = column[Int]("STUDENT_ID")
+  def naam = column[String]("NAAM")
+  def filename = column[String]("FILE_NAME")
+  def blob = column[Array[Byte]]("IMAGE", O.DBType("MEDIUMBLOB"))
+
+  def * = id.? ~ studentId ~ naam ~ filename ~ blob <> (Image.apply _, Image.unapply _)
 }

@@ -12,7 +12,7 @@ import play.api.libs.json.Json
 import play.api.mvc._
 import views.html.defaultpages.notFound
 
-object StudentController extends Controller {
+object StudentController extends Controller with Secured {
   lazy val database = Database.forDataSource(DB.getDataSource())
 
   implicit val HtmlRead = Json.reads[HtmlBlock]
@@ -21,6 +21,12 @@ object StudentController extends Controller {
   implicit val StudentWrite = Json.writes[StudentSimple]
   implicit val InstrumentWrite = Json.writes[Instrument]
 
+  
+  def studentPage = isAuthenticated { username => request => 
+    print(username)
+     Redirect("/web/out/student.html#" + 6)
+    }
+  
   def findStudent(id: String) = Action {
     database withSession {
       implicit session: Session =>

@@ -13,16 +13,23 @@ class VisiteKaart extends WebComponent {
       window.location.assign("/web/out/student.html#$student" );
     });
     
-    _dropZone = this.query('#drop-zone');
-    _dropZone.onDragOver.listen(_onDragOver);
-    _dropZone.onDragEnter.listen((e) => _dropZone.classes.add('hover'));
-    _dropZone.onDragLeave.listen((e) => _dropZone.classes.remove('hover'));
-    _dropZone.onDrop.listen(_onDrop);
-    
     HttpRequest.getString("/student/$student").then(onStudentLoaded);
     HttpRequest.getString("/instruments/$student").then(onInstrumentsLoaded);
-    
-    
+    loadAvatar();  
+  }
+
+  loadAvatar() {
+    _dropZone = this.query('#drop-zone');
+    var thumbnail = new ImageElement(src: "/avatar/$student");
+    thumbnail.onLoad.listen((_) {
+      thumbnail.classes.add('my-photo');
+      var thumbHolder = new Element.tag('span');
+      thumbHolder.nodes.add(thumbnail);
+      _dropZone.nodes.clear();
+      _dropZone.nodes.add(thumbnail);
+      _dropZone.style.background = 'none';
+      _dropZone.classes.remove('drop');
+    });
   }
 
 void onStudentLoaded(String responseText) {
@@ -71,6 +78,11 @@ var mouseOut;
 void editable(bool ed) {
   var blk = this.query('#visite-kaart');  
   if (ed) {     
+    _dropZone.onDragOver.listen(_onDragOver);
+    _dropZone.onDragEnter.listen((e) => _dropZone.classes.add('hover'));
+    _dropZone.onDragLeave.listen((e) => _dropZone.classes.remove('hover'));
+    _dropZone.onDrop.listen(_onDrop);
+    
     mouseOver = blk.onMouseOver.listen((e) {
       this.query('.xxxx').style.display = 'inline-block';
       
@@ -97,24 +109,45 @@ void editable(bool ed) {
     _dropZone.classes.remove('hover');
     var file = event.dataTransfer.files[0];
     print ("file: " + file.name);
-    _putImage(file);
+    _upload(file);
+    //_putImage(file);
   }
   
-  void _putImage(file) {
+  
+  void _upload(File file) {
+    FormData data =  new FormData();
+    data.append("id", student);
+    data.append("avatar", file);
+  
+    var req = new HttpRequest();
+    req.open('put', "/avatar");
+    req.setRequestHeader('enctype', 'multipart/form-data');
+    req.send(data);
+    req.onLoadEnd.listen((e) {
+      if (req.status == 200) {
+        print('result: ${req.responseText}');
+        loadAvatar();
+      }
+    });
+  }
+  
+  
+  // is vervangen door een aanroep van laodAvatar() 
+  // laten staan voor als het toch mis gaat
+  void _putImage(File file) {
     if (file.type.startsWith('image')) {
-     
       var reader = new FileReader();
       reader.onLoad.listen((e) {
         var thumbnail = new ImageElement(src: reader.result);
         thumbnail.classes.add('my-photo');
         var thumbHolder = new Element.tag('span');
         thumbHolder.nodes.add(thumbnail);
+  
         _dropZone.nodes.clear();
         _dropZone.nodes.add(thumbnail);
         _dropZone.style.background = 'none';
         _dropZone.classes.remove('drop');
-      
-             });
+      });
       reader.readAsDataUrl(file);
     }
   }

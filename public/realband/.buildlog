@@ -6525,3 +6525,1743 @@ Total time spent on web/registratie.html                     -- 620 ms
 Total time                                                   -- 3772 ms
 build.dart finished [7019 ms]
 
+---
+build.dart --machine --full
+Uncaught Error: FileException: Cannot retrieve full path for file 'web/packages' (OS Error: No such file or directory, errno = 2)
+Stack Trace:
+#0      _File.throwIfError (file_impl.dart:464:7)
+#1      _File.fullPathSync (file_impl.dart:356:17)
+#2      symlinkPubPackages (package:web_ui/dwc.dart:158:49)
+#3      run.<anonymous closure>.<anonymous closure> (package:web_ui/dwc.dart:89:38)
+#4      _ThenFuture._zonedSendValue (dart:async/future_impl.dart:355:24)
+#5      _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#6      _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#7      _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#8      _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#9      _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#10     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#11     _FutureImpl._setOrChainValue (dart:async/future_impl.dart:320:16)
+#12     _ThenFuture._zonedSendValue (dart:async/future_impl.dart:361:21)
+#13     _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#14     _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#15     _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#16     _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#17     _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#18     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#19     _FutureImpl._setOrChainValue (dart:async/future_impl.dart:320:16)
+#20     _ThenFuture._zonedSendValue (dart:async/future_impl.dart:361:21)
+#21     _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#22     _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#23     _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#24     _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#25     _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#26     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#27     _AsyncCompleter._setFutureValue.<anonymous closure> (dart:async/future_impl.dart:40:23)
+#28     _ZoneBase._runInZone (dart:async/zone.dart:78:19)
+#29     _ZoneBase._runGuarded (dart:async/zone.dart:95:22)
+#30     _ZoneBase.runAsync.<anonymous closure> (dart:async/zone.dart:104:18)
+#31     _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:9:15)
+#32     _createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:8:13)
+
+
+Unhandled exception:
+FileException: Cannot retrieve full path for file 'web/packages' (OS Error: No such file or directory, errno = 2)
+#0      _DefaultZone.handleUncaughtError.<anonymous closure> (dart:async/zone.dart:148:7)
+#1      _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:9:15)
+#2      _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:13:7)
+#3      _createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:8:13)
+#4      _Timer._createTimerHandler._handleTimeout (timer_impl.dart:91:28)
+#5      _Timer._createTimerHandler._handleTimeout (timer_impl.dart:99:7)
+#6      _Timer._createTimerHandler.<anonymous closure> (timer_impl.dart:107:23)
+#7      _ReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:81:92)
+build.dart finished [6039 ms]
+
+---
+build.dart --machine --full
+Uncaught Error: FileException: Cannot retrieve full path for file 'web/packages' (OS Error: No such file or directory, errno = 2)
+Stack Trace:
+#0      _File.throwIfError (file_impl.dart:464:7)
+#1      _File.fullPathSync (file_impl.dart:356:17)
+#2      symlinkPubPackages (package:web_ui/dwc.dart:158:49)
+#3      run.<anonymous closure>.<anonymous closure> (package:web_ui/dwc.dart:89:38)
+#4      _ThenFuture._zonedSendValue (dart:async/future_impl.dart:355:24)
+#5      _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#6      _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#7      _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#8      _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#9      _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#10     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#11     _FutureImpl._setOrChainValue (dart:async/future_impl.dart:320:16)
+#12     _ThenFuture._zonedSendValue (dart:async/future_impl.dart:361:21)
+#13     _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#14     _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#15     _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#16     _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#17     _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#18     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#19     _FutureImpl._setOrChainValue (dart:async/future_impl.dart:320:16)
+#20     _ThenFuture._zonedSendValue (dart:async/future_impl.dart:361:21)
+#21     _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#22     _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#23     _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#24     _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#25     _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#26     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#27     _AsyncCompleter._setFutureValue.<anonymous closure> (dart:async/future_impl.dart:40:23)
+#28     _ZoneBase._runInZone (dart:async/zone.dart:78:19)
+#29     _ZoneBase._runGuarded (dart:async/zone.dart:95:22)
+#30     _ZoneBase.runAsync.<anonymous closure> (dart:async/zone.dart:104:18)
+#31     _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:9:15)
+#32     _createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:8:13)
+
+
+Unhandled exception:
+FileException: Cannot retrieve full path for file 'web/packages' (OS Error: No such file or directory, errno = 2)
+#0      _DefaultZone.handleUncaughtError.<anonymous closure> (dart:async/zone.dart:148:7)
+#1      _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:9:15)
+#2      _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:13:7)
+#3      _createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:8:13)
+#4      _Timer._createTimerHandler._handleTimeout (timer_impl.dart:91:28)
+#5      _Timer._createTimerHandler._handleTimeout (timer_impl.dart:99:7)
+#6      _Timer._createTimerHandler.<anonymous closure> (timer_impl.dart:107:23)
+#7      _ReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:81:92)
+build.dart finished [6144 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Uncaught Error: FileException: Cannot retrieve full path for file 'web/packages' (OS Error: No such file or directory, errno = 2)
+Stack Trace:
+#0      _File.throwIfError (file_impl.dart:464:7)
+#1      _File.fullPathSync (file_impl.dart:356:17)
+#2      symlinkPubPackages (package:web_ui/dwc.dart:158:49)
+#3      run.<anonymous closure>.<anonymous closure> (package:web_ui/dwc.dart:89:38)
+#4      _ThenFuture._zonedSendValue (dart:async/future_impl.dart:355:24)
+#5      _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#6      _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#7      _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#8      _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#9      _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#10     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#11     _FutureImpl._setOrChainValue (dart:async/future_impl.dart:320:16)
+#12     _ThenFuture._zonedSendValue (dart:async/future_impl.dart:361:21)
+#13     _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#14     _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#15     _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#16     _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#17     _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#18     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#19     _FutureImpl._setOrChainValue (dart:async/future_impl.dart:320:16)
+#20     _ThenFuture._zonedSendValue (dart:async/future_impl.dart:361:21)
+#21     _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#22     _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#23     _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#24     _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#25     _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#26     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#27     _AsyncCompleter._setFutureValue.<anonymous closure> (dart:async/future_impl.dart:40:23)
+#28     _ZoneBase._runInZone (dart:async/zone.dart:78:19)
+#29     _ZoneBase._runGuarded (dart:async/zone.dart:95:22)
+#30     _ZoneBase.runAsync.<anonymous closure> (dart:async/zone.dart:104:18)
+#31     _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:9:15)
+#32     _createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:8:13)
+
+
+Unhandled exception:
+FileException: Cannot retrieve full path for file 'web/packages' (OS Error: No such file or directory, errno = 2)
+#0      _DefaultZone.handleUncaughtError.<anonymous closure> (dart:async/zone.dart:148:7)
+#1      _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:9:15)
+#2      _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:13:7)
+#3      _createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:8:13)
+#4      _Timer._createTimerHandler._handleTimeout (timer_impl.dart:91:28)
+#5      _Timer._createTimerHandler._handleTimeout (timer_impl.dart:99:7)
+#6      _Timer._createTimerHandler.<anonymous closure> (timer_impl.dart:107:23)
+#7      _ReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:81:92)
+build.dart finished [959 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Uncaught Error: FileException: Cannot retrieve full path for file 'web/packages' (OS Error: No such file or directory, errno = 2)
+Stack Trace:
+#0      _File.throwIfError (file_impl.dart:464:7)
+#1      _File.fullPathSync (file_impl.dart:356:17)
+#2      symlinkPubPackages (package:web_ui/dwc.dart:158:49)
+#3      run.<anonymous closure>.<anonymous closure> (package:web_ui/dwc.dart:89:38)
+#4      _ThenFuture._zonedSendValue (dart:async/future_impl.dart:355:24)
+#5      _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#6      _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#7      _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#8      _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#9      _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#10     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#11     _FutureImpl._setOrChainValue (dart:async/future_impl.dart:320:16)
+#12     _ThenFuture._zonedSendValue (dart:async/future_impl.dart:361:21)
+#13     _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#14     _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#15     _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#16     _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#17     _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#18     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#19     _FutureImpl._setOrChainValue (dart:async/future_impl.dart:320:16)
+#20     _ThenFuture._zonedSendValue (dart:async/future_impl.dart:361:21)
+#21     _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#22     _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#23     _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#24     _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#25     _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#26     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#27     _AsyncCompleter._setFutureValue.<anonymous closure> (dart:async/future_impl.dart:40:23)
+#28     _ZoneBase._runInZone (dart:async/zone.dart:78:19)
+#29     _ZoneBase._runGuarded (dart:async/zone.dart:95:22)
+#30     _ZoneBase.runAsync.<anonymous closure> (dart:async/zone.dart:104:18)
+#31     _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:9:15)
+#32     _createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:8:13)
+
+
+Unhandled exception:
+FileException: Cannot retrieve full path for file 'web/packages' (OS Error: No such file or directory, errno = 2)
+#0      _DefaultZone.handleUncaughtError.<anonymous closure> (dart:async/zone.dart:148:7)
+#1      _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:9:15)
+#2      _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:13:7)
+#3      _createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:8:13)
+#4      _Timer._createTimerHandler._handleTimeout (timer_impl.dart:91:28)
+#5      _Timer._createTimerHandler._handleTimeout (timer_impl.dart:99:7)
+#6      _Timer._createTimerHandler.<anonymous closure> (timer_impl.dart:107:23)
+#7      _ReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:81:92)
+build.dart finished [960 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Uncaught Error: FileException: Cannot retrieve full path for file 'web/packages' (OS Error: No such file or directory, errno = 2)
+Stack Trace:
+#0      _File.throwIfError (file_impl.dart:464:7)
+#1      _File.fullPathSync (file_impl.dart:356:17)
+#2      symlinkPubPackages (package:web_ui/dwc.dart:158:49)
+#3      run.<anonymous closure>.<anonymous closure> (package:web_ui/dwc.dart:89:38)
+#4      _ThenFuture._zonedSendValue (dart:async/future_impl.dart:355:24)
+#5      _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#6      _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#7      _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#8      _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#9      _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#10     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#11     _FutureImpl._setOrChainValue (dart:async/future_impl.dart:320:16)
+#12     _ThenFuture._zonedSendValue (dart:async/future_impl.dart:361:21)
+#13     _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#14     _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#15     _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#16     _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#17     _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#18     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#19     _FutureImpl._setOrChainValue (dart:async/future_impl.dart:320:16)
+#20     _ThenFuture._zonedSendValue (dart:async/future_impl.dart:361:21)
+#21     _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#22     _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#23     _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#24     _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#25     _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#26     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#27     _AsyncCompleter._setFutureValue.<anonymous closure> (dart:async/future_impl.dart:40:23)
+#28     _ZoneBase._runInZone (dart:async/zone.dart:78:19)
+#29     _ZoneBase._runGuarded (dart:async/zone.dart:95:22)
+#30     _ZoneBase.runAsync.<anonymous closure> (dart:async/zone.dart:104:18)
+#31     _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:9:15)
+#32     _createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:8:13)
+
+
+Unhandled exception:
+FileException: Cannot retrieve full path for file 'web/packages' (OS Error: No such file or directory, errno = 2)
+#0      _DefaultZone.handleUncaughtError.<anonymous closure> (dart:async/zone.dart:148:7)
+#1      _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:9:15)
+#2      _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:13:7)
+#3      _createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:8:13)
+#4      _Timer._createTimerHandler._handleTimeout (timer_impl.dart:91:28)
+#5      _Timer._createTimerHandler._handleTimeout (timer_impl.dart:99:7)
+#6      _Timer._createTimerHandler.<anonymous closure> (timer_impl.dart:107:23)
+#7      _ReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:81:92)
+build.dart finished [969 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Uncaught Error: FileException: Cannot retrieve full path for file 'web/packages' (OS Error: No such file or directory, errno = 2)
+Stack Trace:
+#0      _File.throwIfError (file_impl.dart:464:7)
+#1      _File.fullPathSync (file_impl.dart:356:17)
+#2      symlinkPubPackages (package:web_ui/dwc.dart:158:49)
+#3      run.<anonymous closure>.<anonymous closure> (package:web_ui/dwc.dart:89:38)
+#4      _ThenFuture._zonedSendValue (dart:async/future_impl.dart:355:24)
+#5      _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#6      _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#7      _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#8      _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#9      _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#10     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#11     _FutureImpl._setOrChainValue (dart:async/future_impl.dart:320:16)
+#12     _ThenFuture._zonedSendValue (dart:async/future_impl.dart:361:21)
+#13     _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#14     _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#15     _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#16     _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#17     _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#18     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#19     _FutureImpl._setOrChainValue (dart:async/future_impl.dart:320:16)
+#20     _ThenFuture._zonedSendValue (dart:async/future_impl.dart:361:21)
+#21     _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#22     _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#23     _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#24     _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#25     _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#26     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#27     _AsyncCompleter._setFutureValue.<anonymous closure> (dart:async/future_impl.dart:40:23)
+#28     _ZoneBase._runInZone (dart:async/zone.dart:78:19)
+#29     _ZoneBase._runGuarded (dart:async/zone.dart:95:22)
+#30     _ZoneBase.runAsync.<anonymous closure> (dart:async/zone.dart:104:18)
+#31     _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:9:15)
+#32     _createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:8:13)
+
+
+Unhandled exception:
+FileException: Cannot retrieve full path for file 'web/packages' (OS Error: No such file or directory, errno = 2)
+#0      _DefaultZone.handleUncaughtError.<anonymous closure> (dart:async/zone.dart:148:7)
+#1      _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:9:15)
+#2      _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:13:7)
+#3      _createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:8:13)
+#4      _Timer._createTimerHandler._handleTimeout (timer_impl.dart:91:28)
+#5      _Timer._createTimerHandler._handleTimeout (timer_impl.dart:99:7)
+#6      _Timer._createTimerHandler.<anonymous closure> (timer_impl.dart:107:23)
+#7      _ReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:81:92)
+build.dart finished [946 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Uncaught Error: FileException: Cannot retrieve full path for file 'web/packages' (OS Error: No such file or directory, errno = 2)
+Stack Trace:
+#0      _File.throwIfError (file_impl.dart:464:7)
+#1      _File.fullPathSync (file_impl.dart:356:17)
+#2      symlinkPubPackages (package:web_ui/dwc.dart:158:49)
+#3      run.<anonymous closure>.<anonymous closure> (package:web_ui/dwc.dart:89:38)
+#4      _ThenFuture._zonedSendValue (dart:async/future_impl.dart:355:24)
+#5      _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#6      _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#7      _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#8      _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#9      _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#10     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#11     _FutureImpl._setOrChainValue (dart:async/future_impl.dart:320:16)
+#12     _ThenFuture._zonedSendValue (dart:async/future_impl.dart:361:21)
+#13     _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#14     _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#15     _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#16     _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#17     _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#18     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#19     _FutureImpl._setOrChainValue (dart:async/future_impl.dart:320:16)
+#20     _ThenFuture._zonedSendValue (dart:async/future_impl.dart:361:21)
+#21     _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#22     _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#23     _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#24     _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#25     _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#26     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#27     _AsyncCompleter._setFutureValue.<anonymous closure> (dart:async/future_impl.dart:40:23)
+#28     _ZoneBase._runInZone (dart:async/zone.dart:78:19)
+#29     _ZoneBase._runGuarded (dart:async/zone.dart:95:22)
+#30     _ZoneBase.runAsync.<anonymous closure> (dart:async/zone.dart:104:18)
+#31     _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:9:15)
+#32     _createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:8:13)
+
+
+Unhandled exception:
+FileException: Cannot retrieve full path for file 'web/packages' (OS Error: No such file or directory, errno = 2)
+#0      _DefaultZone.handleUncaughtError.<anonymous closure> (dart:async/zone.dart:148:7)
+#1      _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:9:15)
+#2      _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:13:7)
+#3      _createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:8:13)
+#4      _Timer._createTimerHandler._handleTimeout (timer_impl.dart:91:28)
+#5      _Timer._createTimerHandler._handleTimeout (timer_impl.dart:99:7)
+#6      _Timer._createTimerHandler.<anonymous closure> (timer_impl.dart:107:23)
+#7      _ReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:81:92)
+build.dart finished [949 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Uncaught Error: FileException: Cannot retrieve full path for file 'web/packages' (OS Error: No such file or directory, errno = 2)
+Stack Trace:
+#0      _File.throwIfError (file_impl.dart:464:7)
+#1      _File.fullPathSync (file_impl.dart:356:17)
+#2      symlinkPubPackages (package:web_ui/dwc.dart:158:49)
+#3      run.<anonymous closure>.<anonymous closure> (package:web_ui/dwc.dart:89:38)
+#4      _ThenFuture._zonedSendValue (dart:async/future_impl.dart:355:24)
+#5      _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#6      _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#7      _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#8      _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#9      _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#10     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#11     _FutureImpl._setOrChainValue (dart:async/future_impl.dart:320:16)
+#12     _ThenFuture._zonedSendValue (dart:async/future_impl.dart:361:21)
+#13     _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#14     _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#15     _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#16     _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#17     _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#18     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#19     _FutureImpl._setOrChainValue (dart:async/future_impl.dart:320:16)
+#20     _ThenFuture._zonedSendValue (dart:async/future_impl.dart:361:21)
+#21     _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#22     _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#23     _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#24     _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#25     _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#26     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#27     _AsyncCompleter._setFutureValue.<anonymous closure> (dart:async/future_impl.dart:40:23)
+#28     _ZoneBase._runInZone (dart:async/zone.dart:78:19)
+#29     _ZoneBase._runGuarded (dart:async/zone.dart:95:22)
+#30     _ZoneBase.runAsync.<anonymous closure> (dart:async/zone.dart:104:18)
+#31     _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:9:15)
+#32     _createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:8:13)
+
+
+Unhandled exception:
+FileException: Cannot retrieve full path for file 'web/packages' (OS Error: No such file or directory, errno = 2)
+#0      _DefaultZone.handleUncaughtError.<anonymous closure> (dart:async/zone.dart:148:7)
+#1      _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:9:15)
+#2      _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:13:7)
+#3      _createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:8:13)
+#4      _Timer._createTimerHandler._handleTimeout (timer_impl.dart:91:28)
+#5      _Timer._createTimerHandler._handleTimeout (timer_impl.dart:99:7)
+#6      _Timer._createTimerHandler.<anonymous closure> (timer_impl.dart:107:23)
+#7      _ReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:81:92)
+build.dart finished [946 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Uncaught Error: FileException: Cannot retrieve full path for file 'web/packages' (OS Error: No such file or directory, errno = 2)
+Stack Trace:
+#0      _File.throwIfError (file_impl.dart:464:7)
+#1      _File.fullPathSync (file_impl.dart:356:17)
+#2      symlinkPubPackages (package:web_ui/dwc.dart:158:49)
+#3      run.<anonymous closure>.<anonymous closure> (package:web_ui/dwc.dart:89:38)
+#4      _ThenFuture._zonedSendValue (dart:async/future_impl.dart:355:24)
+#5      _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#6      _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#7      _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#8      _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#9      _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#10     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#11     _FutureImpl._setOrChainValue (dart:async/future_impl.dart:320:16)
+#12     _ThenFuture._zonedSendValue (dart:async/future_impl.dart:361:21)
+#13     _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#14     _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#15     _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#16     _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#17     _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#18     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#19     _FutureImpl._setOrChainValue (dart:async/future_impl.dart:320:16)
+#20     _ThenFuture._zonedSendValue (dart:async/future_impl.dart:361:21)
+#21     _TransformFuture._sendValue.<anonymous closure> (dart:async/future_impl.dart:332:48)
+#22     _ZoneBase._runInZone (dart:async/zone.dart:70:17)
+#23     _ZoneBase._runUnguarded (dart:async/zone.dart:98:22)
+#24     _ZoneBase.executeCallback (dart:async/zone.dart:56:23)
+#25     _TransformFuture._sendValue (dart:async/future_impl.dart:332:26)
+#26     _FutureImpl._setValue (dart:async/future_impl.dart:185:26)
+#27     _AsyncCompleter._setFutureValue.<anonymous closure> (dart:async/future_impl.dart:40:23)
+#28     _ZoneBase._runInZone (dart:async/zone.dart:78:19)
+#29     _ZoneBase._runGuarded (dart:async/zone.dart:95:22)
+#30     _ZoneBase.runAsync.<anonymous closure> (dart:async/zone.dart:104:18)
+#31     _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:9:15)
+#32     _createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:8:13)
+
+
+Unhandled exception:
+FileException: Cannot retrieve full path for file 'web/packages' (OS Error: No such file or directory, errno = 2)
+#0      _DefaultZone.handleUncaughtError.<anonymous closure> (dart:async/zone.dart:148:7)
+#1      _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:9:15)
+#2      _asyncRunCallback._asyncRunCallback (dart:async/event_loop.dart:13:7)
+#3      _createTimer.<anonymous closure> (dart:async-patch/timer_patch.dart:8:13)
+#4      _Timer._createTimerHandler._handleTimeout (timer_impl.dart:91:28)
+#5      _Timer._createTimerHandler._handleTimeout (timer_impl.dart:99:7)
+#6      _Timer._createTimerHandler.<anonymous closure> (timer_impl.dart:107:23)
+#7      _ReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:81:92)
+build.dart finished [953 ms]
+
+---
+build.dart --machine --full
+Total time spent on web/realband.html                        -- 301 ms
+[{"method":"mapping","params":{"from":"web/realband.html","to":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html_bootstrap.dart"}}]
+Total time spent on web/student.html                         -- 689 ms
+[{"method":"generated","params":{"file":"web/out/html-block.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/html-block.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/student.html","to":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time spent on web/zoek.html                            -- 315 ms
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/zoek.html","to":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html.css"}}]
+Total time spent on web/registratie.html                     -- 530 ms
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart"}}]
+[{"method":"mapping","params":{"from":"web/registratie.html","to":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time                                                   -- 2647 ms
+build.dart finished [3164 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Total time spent on web/realband.html                        -- 217 ms
+[{"method":"mapping","params":{"from":"web/realband.html","to":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html_bootstrap.dart"}}]
+Total time spent on web/student.html                         -- 608 ms
+[{"method":"generated","params":{"file":"web/out/html-block.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/html-block.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/student.html","to":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time spent on web/zoek.html                            -- 292 ms
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/zoek.html","to":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html.css"}}]
+Total time spent on web/registratie.html                     -- 534 ms
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart"}}]
+[{"method":"mapping","params":{"from":"web/registratie.html","to":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time                                                   -- 2198 ms
+build.dart finished [2541 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Total time spent on web/realband.html                        -- 208 ms
+[{"method":"mapping","params":{"from":"web/realband.html","to":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html_bootstrap.dart"}}]
+Total time spent on web/student.html                         -- 593 ms
+[{"method":"generated","params":{"file":"web/out/html-block.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/html-block.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/student.html","to":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time spent on web/zoek.html                            -- 294 ms
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/zoek.html","to":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html.css"}}]
+Total time spent on web/registratie.html                     -- 549 ms
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart"}}]
+[{"method":"mapping","params":{"from":"web/registratie.html","to":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time                                                   -- 2178 ms
+build.dart finished [2480 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Total time spent on web/realband.html                        -- 212 ms
+[{"method":"mapping","params":{"from":"web/realband.html","to":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html_bootstrap.dart"}}]
+Total time spent on web/student.html                         -- 579 ms
+[{"method":"generated","params":{"file":"web/out/html-block.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/html-block.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/student.html","to":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time spent on web/zoek.html                            -- 287 ms
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/zoek.html","to":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html.css"}}]
+Total time spent on web/registratie.html                     -- 546 ms
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart"}}]
+[{"method":"mapping","params":{"from":"web/registratie.html","to":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time                                                   -- 2146 ms
+build.dart finished [2384 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Total time spent on web/realband.html                        -- 207 ms
+[{"method":"mapping","params":{"from":"web/realband.html","to":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html_bootstrap.dart"}}]
+Total time spent on web/student.html                         -- 614 ms
+[{"method":"generated","params":{"file":"web/out/html-block.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/html-block.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/student.html","to":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time spent on web/zoek.html                            -- 290 ms
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/zoek.html","to":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html.css"}}]
+Total time spent on web/registratie.html                     -- 532 ms
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart"}}]
+[{"method":"mapping","params":{"from":"web/registratie.html","to":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time                                                   -- 2189 ms
+build.dart finished [2599 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Total time spent on web/realband.html                        -- 208 ms
+[{"method":"mapping","params":{"from":"web/realband.html","to":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html_bootstrap.dart"}}]
+Total time spent on web/student.html                         -- 589 ms
+[{"method":"generated","params":{"file":"web/out/html-block.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/html-block.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/student.html","to":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time spent on web/zoek.html                            -- 277 ms
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/zoek.html","to":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html.css"}}]
+Total time spent on web/registratie.html                     -- 546 ms
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart"}}]
+[{"method":"mapping","params":{"from":"web/registratie.html","to":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time                                                   -- 2143 ms
+build.dart finished [2387 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Total time spent on web/realband.html                        -- 206 ms
+[{"method":"mapping","params":{"from":"web/realband.html","to":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html_bootstrap.dart"}}]
+Total time spent on web/student.html                         -- 573 ms
+[{"method":"generated","params":{"file":"web/out/html-block.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/html-block.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/student.html","to":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time spent on web/zoek.html                            -- 289 ms
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/zoek.html","to":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html.css"}}]
+Total time spent on web/registratie.html                     -- 539 ms
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart"}}]
+[{"method":"mapping","params":{"from":"web/registratie.html","to":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time                                                   -- 2127 ms
+build.dart finished [2384 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Total time spent on web/realband.html                        -- 207 ms
+[{"method":"mapping","params":{"from":"web/realband.html","to":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html_bootstrap.dart"}}]
+Total time spent on web/student.html                         -- 573 ms
+[{"method":"generated","params":{"file":"web/out/html-block.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/html-block.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/student.html","to":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time spent on web/zoek.html                            -- 285 ms
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/zoek.html","to":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html.css"}}]
+Total time spent on web/registratie.html                     -- 546 ms
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart"}}]
+[{"method":"mapping","params":{"from":"web/registratie.html","to":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time                                                   -- 2132 ms
+build.dart finished [2491 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Total time spent on web/realband.html                        -- 212 ms
+[{"method":"mapping","params":{"from":"web/realband.html","to":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html_bootstrap.dart"}}]
+Total time spent on web/student.html                         -- 569 ms
+[{"method":"generated","params":{"file":"web/out/html-block.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/html-block.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/student.html","to":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time spent on web/zoek.html                            -- 294 ms
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/zoek.html","to":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html.css"}}]
+Total time spent on web/registratie.html                     -- 528 ms
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart"}}]
+[{"method":"mapping","params":{"from":"web/registratie.html","to":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time                                                   -- 2118 ms
+build.dart finished [2362 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Total time spent on web/realband.html                        -- 207 ms
+[{"method":"mapping","params":{"from":"web/realband.html","to":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html_bootstrap.dart"}}]
+Total time spent on web/student.html                         -- 579 ms
+[{"method":"generated","params":{"file":"web/out/html-block.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/html-block.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/student.html","to":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time spent on web/zoek.html                            -- 291 ms
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/zoek.html","to":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html.css"}}]
+Total time spent on web/registratie.html                     -- 543 ms
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart"}}]
+[{"method":"mapping","params":{"from":"web/registratie.html","to":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time                                                   -- 2138 ms
+build.dart finished [2528 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Total time spent on web/realband.html                        -- 210 ms
+[{"method":"mapping","params":{"from":"web/realband.html","to":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html_bootstrap.dart"}}]
+Total time spent on web/student.html                         -- 590 ms
+[{"method":"generated","params":{"file":"web/out/html-block.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/html-block.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/student.html","to":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time spent on web/zoek.html                            -- 290 ms
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/zoek.html","to":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html.css"}}]
+Total time spent on web/registratie.html                     -- 562 ms
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart"}}]
+[{"method":"mapping","params":{"from":"web/registratie.html","to":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time                                                   -- 2183 ms
+build.dart finished [2497 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Total time spent on web/realband.html                        -- 226 ms
+[{"method":"mapping","params":{"from":"web/realband.html","to":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html_bootstrap.dart"}}]
+Total time spent on web/student.html                         -- 582 ms
+[{"method":"generated","params":{"file":"web/out/html-block.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/html-block.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/student.html","to":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time spent on web/zoek.html                            -- 276 ms
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/zoek.html","to":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html.css"}}]
+Total time spent on web/registratie.html                     -- 552 ms
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart"}}]
+[{"method":"mapping","params":{"from":"web/registratie.html","to":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time                                                   -- 2180 ms
+build.dart finished [2424 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Total time spent on web/realband.html                        -- 224 ms
+[{"method":"mapping","params":{"from":"web/realband.html","to":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html_bootstrap.dart"}}]
+Total time spent on web/student.html                         -- 634 ms
+[{"method":"generated","params":{"file":"web/out/html-block.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/html-block.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/student.html","to":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time spent on web/zoek.html                            -- 339 ms
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/zoek.html","to":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html.css"}}]
+Total time spent on web/registratie.html                     -- 603 ms
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart"}}]
+[{"method":"mapping","params":{"from":"web/registratie.html","to":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time                                                   -- 2405 ms
+build.dart finished [2808 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Total time spent on web/realband.html                        -- 208 ms
+[{"method":"mapping","params":{"from":"web/realband.html","to":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html_bootstrap.dart"}}]
+Total time spent on web/student.html                         -- 613 ms
+[{"method":"generated","params":{"file":"web/out/html-block.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/html-block.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/student.html","to":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time spent on web/zoek.html                            -- 279 ms
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/zoek.html","to":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html.css"}}]
+Total time spent on web/registratie.html                     -- 528 ms
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart"}}]
+[{"method":"mapping","params":{"from":"web/registratie.html","to":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time                                                   -- 2181 ms
+build.dart finished [2549 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Total time spent on web/realband.html                        -- 211 ms
+[{"method":"mapping","params":{"from":"web/realband.html","to":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html_bootstrap.dart"}}]
+Total time spent on web/student.html                         -- 583 ms
+[{"method":"generated","params":{"file":"web/out/html-block.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/html-block.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/student.html","to":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time spent on web/zoek.html                            -- 292 ms
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/zoek.html","to":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html.css"}}]
+Total time spent on web/registratie.html                     -- 549 ms
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart"}}]
+[{"method":"mapping","params":{"from":"web/registratie.html","to":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time                                                   -- 2160 ms
+build.dart finished [2465 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Total time spent on web/realband.html                        -- 204 ms
+[{"method":"mapping","params":{"from":"web/realband.html","to":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html_bootstrap.dart"}}]
+Total time spent on web/student.html                         -- 586 ms
+[{"method":"generated","params":{"file":"web/out/html-block.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/html-block.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/student.html","to":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time spent on web/zoek.html                            -- 273 ms
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/zoek.html","to":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html.css"}}]
+Total time spent on web/registratie.html                     -- 551 ms
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart"}}]
+[{"method":"mapping","params":{"from":"web/registratie.html","to":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time                                                   -- 2127 ms
+build.dart finished [2451 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Total time spent on web/realband.html                        -- 212 ms
+[{"method":"mapping","params":{"from":"web/realband.html","to":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html_bootstrap.dart"}}]
+Total time spent on web/student.html                         -- 615 ms
+[{"method":"generated","params":{"file":"web/out/html-block.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/html-block.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/student.html","to":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time spent on web/zoek.html                            -- 286 ms
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/zoek.html","to":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html.css"}}]
+Total time spent on web/registratie.html                     -- 569 ms
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart"}}]
+[{"method":"mapping","params":{"from":"web/registratie.html","to":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time                                                   -- 2203 ms
+build.dart finished [2889 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Total time spent on web/realband.html                        -- 206 ms
+[{"method":"mapping","params":{"from":"web/realband.html","to":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html_bootstrap.dart"}}]
+Total time spent on web/student.html                         -- 581 ms
+[{"method":"generated","params":{"file":"web/out/html-block.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/html-block.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/student.html","to":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time spent on web/zoek.html                            -- 277 ms
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/zoek.html","to":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html.css"}}]
+Total time spent on web/registratie.html                     -- 718 ms
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart"}}]
+[{"method":"mapping","params":{"from":"web/registratie.html","to":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time                                                   -- 2295 ms
+build.dart finished [2535 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Total time spent on web/realband.html                        -- 204 ms
+[{"method":"mapping","params":{"from":"web/realband.html","to":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html_bootstrap.dart"}}]
+Total time spent on web/student.html                         -- 601 ms
+[{"method":"generated","params":{"file":"web/out/html-block.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/html-block.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/student.html","to":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time spent on web/zoek.html                            -- 279 ms
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/zoek.html","to":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html.css"}}]
+Total time spent on web/registratie.html                     -- 521 ms
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart"}}]
+[{"method":"mapping","params":{"from":"web/registratie.html","to":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time                                                   -- 2125 ms
+build.dart finished [2506 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Total time spent on web/realband.html                        -- 208 ms
+[{"method":"mapping","params":{"from":"web/realband.html","to":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html_bootstrap.dart"}}]
+Total time spent on web/student.html                         -- 578 ms
+[{"method":"generated","params":{"file":"web/out/html-block.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/html-block.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/student.html","to":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time spent on web/zoek.html                            -- 281 ms
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/zoek.html","to":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html.css"}}]
+Total time spent on web/registratie.html                     -- 536 ms
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart"}}]
+[{"method":"mapping","params":{"from":"web/registratie.html","to":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time                                                   -- 2121 ms
+build.dart finished [2416 ms]
+
+---
+build.dart --machine --changed=web/visitekaart.dart
+Total time spent on web/realband.html                        -- 204 ms
+[{"method":"mapping","params":{"from":"web/realband.html","to":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.dart"}}]
+[{"method":"generated","params":{"file":"web/out/realband.html_bootstrap.dart"}}]
+Total time spent on web/student.html                         -- 580 ms
+[{"method":"generated","params":{"file":"web/out/html-block.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/html-block.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/student.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/block-editor.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/student.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/student.html","to":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/student.html"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time spent on web/zoek.html                            -- 332 ms
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/zoek-bar.dart"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/visitekaart.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart"}}]
+[{"method":"generated","params":{"file":"web/out/login.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/zoek.html","to":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web/out/zoek.html.css"}}]
+Total time spent on web/registratie.html                     -- 523 ms
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/realband.css"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html.css"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/passwordfield.dart"}}]
+[{"method":"mapping","params":{"from":"web/registratie.html","to":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html"}}]
+[{"method":"generated","params":{"file":"web/out/registratie.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart.map"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/prepend-textfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/emailfield.dart"}}]
+[{"method":"generated","params":{"file":"web/out/_from_packages/forms/checkboxlist.dart"}}]
+[{"method":"generated","params":{"file":"web/out/bootstrap/css/bootstrap.css"}}]
+Total time                                                   -- 2160 ms
+build.dart finished [2401 ms]
+
