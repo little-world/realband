@@ -21,7 +21,8 @@ object StudentController extends Controller with Secured {
   implicit val StudentWrite = Json.writes[StudentSimple]
   implicit val InstrumentWrite = Json.writes[Instrument]
 
-  
+  //todo authenticatie voor alle studenten
+  // dit is een fake 
   def studentPage = isAuthenticated { username => request => 
     print(username)
      Redirect("/web/out/student.html#" + 6)

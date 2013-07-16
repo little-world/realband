@@ -13,7 +13,7 @@ main() {
   useShadowDom = true;
   Timer.run(() {
     group("student", () {
-      test("to json", () {
+      test("to and from Json", () {
         var student = new Student();
         InstanceMirror cm = reflect(student);
         cm.type.variables.forEach((s, VariableMirror m) {

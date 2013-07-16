@@ -62,11 +62,11 @@
               <div class="block" id="student">
                 <h3>student gegevens</h3>
                 <form class="form-horizontal" id="login">
-                  <div is="text-field" name="naam" mir="{{'url'}}"></div>
+                  <div is="text-field" name="naam" min="3"></div>
                   <div is="email-field" name="email"></div>
-                  <div is="password-field" name="password"></div>
-                  <div is="text-field" name="woonplaats"></div>
-                  <div is="text-field" name="telefoon"></div>
+                  <div is="password-field" name="password" min="5"></div>
+                  <div is="text-field" name="woonplaats" ></div>
+                  <div is="text-field" name="telefoon" min="10"></div>
                 </form>
               </div>
             </div>
@@ -76,7 +76,7 @@
                 <form class="form-horizontal" id="profile">
                    <div is="text-field" name="opleiding"></div>
                    <div is="checkbox-list" name="instrument"></div>
-                   <div is="prepend-text-field" name="url" prepend="http://realband.nl/"></div>
+                   <!--<div is="prepend-text-field" name="url" prepend="http://realband.nl/"></div>-->
                     <div class="controls">  
                       <a class="btn btn-primary btn-large" id="register" on-click="register()">Aanmelden</a>
                     </div>

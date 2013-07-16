@@ -12,7 +12,7 @@ case class StudentForRegistration (
   password: String,
   woonplaats: String,
   telefoon: String,
-  url: String,
+  url: String = "",
   opleiding: String,
   instrument: List[String]
 )
@@ -23,7 +23,7 @@ case class StudentSimple (
   password: String,
   woonplaats: String,
   telefoon: String,
-  url: String,
+  url: String= "",
   opleiding: String
 )
 
@@ -35,7 +35,7 @@ case class Student(
   password: String,
   woonplaats: String,
   telefoon: String,
-  url: String,
+  url: String = "",
   opleiding: String)
   
 case class Instrument (

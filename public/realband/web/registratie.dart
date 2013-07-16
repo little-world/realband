@@ -44,7 +44,7 @@ class Student {
     telefoon = query('div[name=telefoon]').xtag.textValue;
     opleiding = query('div[name=opleiding]').xtag.textValue;   
     instrument = query('div[name=instrument]').xtag.textValue;   
-    url = query('div[name=url]').xtag.textValue;   
+    //url = query('div[name=url]').xtag.textValue;   
   }
   
   Student.fromJson(responseText) {
@@ -65,7 +65,7 @@ class Student {
      query('div[name=woonplaats]').xtag.textValue = woonplaats;
      query('div[name=telefoon]').xtag.textValue = telefoon;
      query('div[name=opleiding]').xtag.textValue = opleiding;   
-     query('div[name=url]').xtag.textValue = url;   
+     //query('div[name=url]').xtag.textValue = url;   
      query('div[name=instrument]').xtag.textValue = instrument;   
   }
 }
@@ -114,18 +114,34 @@ void register() {
   Student student = new Student.fromForm();
   print("register student: " + student.toJson());
   var req = new HttpRequest();
-  req.open('put', "/register", async:false);
-  req.setRequestHeader('Content-type', 'application/json');
-  req.send(student.toJson());
   
-  // LET OP async: false
-  if (req.status == 200 || req.status == 0) {
-    print("id ${req.responseText}");
-    var id = req.responseText;
-    window.location.assign("/web/out/student.html#$id" );
-  }
-  else {
-    print('/register error: ${req.responseText}');
+  if( query('#register').text == "Wijzigen") {
+    var hash = window.location.hash;
+    if(!hash.isEmpty) {
+      var stdId = hash.substring(1);
+      req.open('post', "/update/$stdId", async:false);
+      req.setRequestHeader('Content-type', 'application/json');
+      req.send(student.toJson());
+      
+      // LET OP async: false
+      if (req.status == 200 || req.status == 0) {
+        window.location.assign("/web/out/student.html#$stdId" );
+      }
+    }
+  } else {
+    req.open('put', "/register", async:false);
+    req.setRequestHeader('Content-type', 'application/json');
+    req.send(student.toJson());
+    
+    // LET OP async: false
+    if (req.status == 200 || req.status == 0) {
+      print("id ${req.responseText}");
+      var id = req.responseText;
+      window.location.assign("/web/out/student.html#$id" );
+    }
+    else {
+      print('/register error: ${req.responseText}');
+    }
   }
 }
 

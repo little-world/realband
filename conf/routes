@@ -5,6 +5,7 @@
 # Home page
 GET     /                           controllers.Application.index
 PUT		/register					controllers.RegisterController.register
+POST	/update/:id					controllers.RegisterController.update(id: Int)
 PUT		/avatar						controllers.ImageController.saveAvatar
 GET		/avatar/:id					controllers.ImageController.findAvatar(id: String)
 PUT		/email-check				controllers.RegisterController.emailCheck

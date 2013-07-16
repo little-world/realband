@@ -16,9 +16,9 @@ object ApplicationBuild extends Build {
   )
 
   val main = play.Project(appName, appVersion, appDependencies).settings( // Add your own project settings here      
-  
+  javaOptions in Test += "-Dconfig.file=conf/test.conf",
   testOptions in Test += Tests.Argument(TestFrameworks.Specs2, "junitxml", "console")
-  
+     
   
   )
   

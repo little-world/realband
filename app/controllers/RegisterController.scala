@@ -23,7 +23,7 @@ object RegisterController extends Controller {
     implicit request =>
       request.body.asJson.map {
         json =>
-         
+
           json.validate[StudentForRegistration].fold(
             invalid => {
               BadRequest(Json.toJson(Map("error json" -> invalid.toString)))
@@ -60,11 +60,55 @@ object RegisterController extends Controller {
         Map("error request.body" -> "Not Json"))))
 
   }
-  
-  
-  case class EmailCheck (email: String)
 
-  def emailCheck  = Action {
+  def update(id: Int) = Action {
+    implicit request =>
+      request.body.asJson.map {
+        json =>
+
+          json.validate[StudentForRegistration].fold(
+            invalid => {
+              BadRequest(Json.toJson(Map("error json" -> invalid.toString)))
+            },
+            std => {
+              database withSession {
+                implicit session: Session =>
+                  //                  Students.ddl.create
+                  //                  Instruments.ddl.create
+
+                  print("in update: " + std);
+
+                  def insertInstruments(id: Int, user: StudentForRegistration) = Try(
+                    for (instr <- user.instrument)
+                      Instruments.insert(Instrument(id, instr)))
+
+                  def updateUser(id: Int, user: StudentForRegistration) = {
+                    val q = for {
+                      user <- Students if user.id is id
+                    } yield user.naam ~ user.email ~ user.password ~ user.woonplaats ~ user.telefoon ~ user.url ~ user.opleiding <> (StudentSimple.apply _, StudentSimple.unapply _)
+                    Try(
+                      q.first match {
+                        case s => q.update(new StudentSimple(std.naam, std.email, std.password, std.woonplaats, std.telefoon, std.url, std.opleiding))
+                      })
+                  }
+                 Instruments.where(_.studentId === id).delete
+                  (for {
+                    a <- insertInstruments(id, std)
+                    id <- updateUser(id, std)
+                  } yield id) match {
+                    case Success(a) => Ok(Json.toJson(a))
+                    case Failure(e) => BadRequest(Json.toJson(Map("error database" -> e.getMessage())))
+                  }
+              }
+            })
+      }.getOrElse(BadRequest(Json.toJson(
+        Map("error request.body" -> "Not Json"))))
+
+  }
+
+  case class EmailCheck(email: String)
+
+  def emailCheck = Action {
     implicit request =>
       implicit val ECheck = Json.reads[EmailCheck]
       request.body.asJson.map {
@@ -95,24 +139,22 @@ object RegisterController extends Controller {
       }.getOrElse(BadRequest(Json.toJson(
         Map("error request.body" -> "Not Json"))))
   }
-  
-  
-  
+
   def sendEmail(id: Int) {
- Try {
-    val mail = use[MailerPlugin].email
-    mail.setSubject("mailer")
-    mail.addRecipient("Peter van Rijn <peter.van.rijn@little-world.com>", "littleworld.com@gmail.com")
-    mail.addFrom("Peter van Rijn <littleworld.com@gmail.com>")
-    //sends html
-    mail.sendHtml("<html>html</html>")
-    //sends text/text
-    mail.send("test 123")
-    //sends both text and html
-    mail.send("text", "<html>html</html>")
- } match {
-   case Success(_) => print("success")
-   case Failure(e) => print (e)
- }
+    Try {
+      val mail = use[MailerPlugin].email
+      mail.setSubject("mailer")
+      mail.addRecipient("Peter van Rijn <peter.van.rijn@little-world.com>", "littleworld.com@gmail.com")
+      mail.addFrom("Peter van Rijn <littleworld.com@gmail.com>")
+      //sends html
+      mail.sendHtml("<html>html</html>")
+      //sends text/text
+      mail.send("test 123")
+      //sends both text and html
+      mail.send("text", "<html>html</html>")
+    } match {
+      case Success(_) => print("success")
+      case Failure(e) => print(e)
+    }
   }
 }
