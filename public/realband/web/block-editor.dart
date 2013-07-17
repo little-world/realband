@@ -16,8 +16,7 @@ class BlockEditor extends WebComponent {
   }
   
   select(name) {
-    
-    
+       
     website = name;
 
     textarea.style
@@ -27,7 +26,7 @@ class BlockEditor extends WebComponent {
     if(website == 'youtube') {
       textarea.placeholder = "kopieer de url: youtube.com/watch ...";
     } else if (website == 'soundcloud') {
-      textarea.placeholder = '''kopieer meedere sounds; gebruik share -> widget''';
+      textarea.placeholder = '''kopieer een groep sounds; gebruik share -> widget''';
     } else if (website == 'foto') {
       textarea.placeholder = '''sleep je foto hierin''';
     } else if (website == 'html') {

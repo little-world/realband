@@ -11,7 +11,7 @@ GET		/avatar/:id					controllers.ImageController.findAvatar(id: String)
 PUT		/email-check				controllers.RegisterController.emailCheck
 PUT		/student/saveContent		controllers.StudentController.upsertContent
 PUT		/student/deleteContent		controllers.StudentController.deleteContent
-POST	/student/html				controllers.StudentController.getHtml
+POST	/html						controllers.StudentController.getHtml
 GET		/student/:id				controllers.StudentController.findStudent(id: String)
 GET		/students					controllers.StudentController.findAllStudents
 GET		/instruments/:id			controllers.StudentController.findInstruments(id: String)

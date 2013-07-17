@@ -37,6 +37,7 @@ void onStudentLoaded(String responseText) {
     
   StringBuffer sb = new StringBuffer("<table class='profiel'>");
   json.keys.forEach((key) {
+    if(key != 'password' && key != 'url')
     sb.writeln("<tr><td>$key:</td><td>${json[key]}</td></tr>");
   });
   sb.writeln("</table>");
@@ -58,10 +59,8 @@ void onInstrumentsLoaded(String responseText) {
   List json = parse(responseText);
   
   StringBuffer sb = new StringBuffer("<table class='profiel'>");
-  json.forEach((inst) {
-    sb.writeln("<tr><td>instrument: </td><td>$inst</td></tr>");
-  });
-  sb.writeln("</table>");
+  var instrs = json.join(", ");
+  sb.writeln("<tr><td style='vertical-align: top'>instrument: </td><td>$instrs</td></tr></table>");
   this.query('#instruments').innerHtml = sb.toString();
  
 } 

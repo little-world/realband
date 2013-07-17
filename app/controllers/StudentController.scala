@@ -93,11 +93,11 @@ object StudentController extends Controller with Secured {
                   print("blk: " + req)
                   val q = for {
                     blk <- HtmlBlocks if blk.studentId === req.studentId && blk.row === req.row && blk.col === req.col
-                  } yield blk.content
+                  } yield blk
 
                   Try(
                       q.firstOption match {
-                        case Some(b) => q.update(req.content)
+                        case Some(b) => q.update(req)
                         case None => HtmlBlocks.insert(HtmlBlock(req.studentId, req.website, req.content, req.row, req.col))
                       }
                       
@@ -161,11 +161,9 @@ object StudentController extends Controller with Secured {
                     blk <- HtmlBlocks if blk.studentId === req.studentId && blk.row === req.row && blk.col === req.col
                   } yield (
                     blk.studentId ~ blk.website ~ blk.content ~ blk.row ~ blk.col <> (HtmlBlock.apply _, HtmlBlock.unapply _))
-                  Try(q.list) match {
-                    case Success(a) if (!a.isEmpty) => Ok(Json.toJson(a.last))
-                    // when the block is empty a BadRequest is returned
-                    // but this is not a BadRequest it an empty request or better a no data request
-                    case Success(a) if (a.isEmpty) => Accepted(Json.toJson(Map("error" -> "no data")))
+                  Try(q.firstOption) match {
+                    case Success(a) if (a.isDefined) => Ok(Json.toJson(a.get))
+                    case Success(a) if (!a.isDefined) => Accepted(Json.toJson(Map("message" -> "no data")))
                     case Failure(e) => BadRequest(Json.toJson(Map("error database" -> e.getMessage())))
                   }
 

@@ -119,6 +119,7 @@ void register() {
     var hash = window.location.hash;
     if(!hash.isEmpty) {
       var stdId = hash.substring(1);
+      print("std: " + stdId);
       req.open('post', "/update/$stdId", async:false);
       req.setRequestHeader('Content-type', 'application/json');
       req.send(student.toJson());

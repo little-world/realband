@@ -41,7 +41,7 @@ class HtmlBlock extends WebComponent {
     print(stringify(map));
     
     var req = new HttpRequest();
-    req.open('post', '/student/html');
+    req.open('post', '/html');
     req.setRequestHeader('Content-type', 'application/json');
     req.send(stringify(map));
     req.onLoadEnd.listen((e) {
@@ -49,14 +49,30 @@ class HtmlBlock extends WebComponent {
     });
   }
  
-  
-  
   void onHtmlLoaded(String responseText) {
     var json = parse(responseText);
     print("html: " + json.toString());
+    
+    if (json['website'] == 'youtube') {
+      var code = json['content'].substring(json['content'].lastIndexOf('=')+1);
+      print(code);
+      var el = new IFrameElement();
+      el..src = "http://www.youtube.com/embed/${code}?feature=player_detailpage"
+      ..attributes['frameborder'] = '0'
+      ..attributes['allowfullscreen'] = 'true';
+      el.style
+        ..border = '7px solid black'
+        ..borderRadius = '15px'
+        ..width = '98%'
+        ..height = '95.5%';
+      this.query('.content').children.add(el);
+      this.query('.block').style..border = 'none' ..boxShadow = 'none';
+    } else 
       this.query('.content').innerHtml = json['content'].toString();
     
   } 
+  
+
   
   void submit(Event event) {
       final bt = event.target as Element;
