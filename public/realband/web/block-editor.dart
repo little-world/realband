@@ -6,7 +6,7 @@ import 'dart:json';
 
 class BlockEditor extends WebComponent {
   
-  var website="html";
+  var website="";
   int row, col;
   Element par;
   TextAreaElement textarea;
@@ -15,13 +15,13 @@ class BlockEditor extends WebComponent {
     textarea = this.query("textarea");
   }
   
-  select(name) {
+  void select(name) {
        
     website = name;
 
     textarea.style
     ..marginTop = '15px'
-    ..height = '50px';
+    ..height = '150px';
     
     if(website == 'youtube') {
       textarea.placeholder = "kopieer de url: youtube.com/watch ...";
@@ -29,7 +29,7 @@ class BlockEditor extends WebComponent {
       textarea.placeholder = '''kopieer een groep sounds; gebruik share -> widget''';
     } else if (website == 'foto') {
       textarea.placeholder = '''sleep je foto hierin''';
-    } else if (website == 'html') {
+    } else if (website == 'text') {
       textarea.placeholder = '''type of kopieer je eigen html tekst''';
        
     }
@@ -41,9 +41,10 @@ class BlockEditor extends WebComponent {
    
   }
   
-  void parenting(parent, row, col) {
+  void parenting(parent, website, row, col) {
     this.par = parent;
     this.row = row;
+    this.website = website;
     this.col = col;
     var content = par.query('.content');
     
@@ -51,13 +52,25 @@ class BlockEditor extends WebComponent {
        textarea.value = content.innerHtml;   
       textarea.style
       ..marginTop = '15px'
-      ..height = '50px';
+      ..height = '150px';
     } else {
       textarea.style
       ..marginTop = '0px'
       ..height = '0px';
       textarea.value = ""; 
     }
+   
+    
+    this.queryAll('.editor-button').forEach((Element e) {
+        if (e.classes.contains(website)) 
+          e.style..backgroundImage =  'linear-gradient(-200deg, #38a3ca, #7073ba ,#7030ba)' 
+          ..color = 'white';
+        else 
+          e.style..backgroundImage =  'linear-gradient(-30deg, #88a3ca, #3883ca ,#3030ba)' 
+              ..color = '#ccc';
+                
+      
+    });
   }
   
   void close() {
@@ -104,16 +117,16 @@ class BlockEditor extends WebComponent {
       content.parent.classes.remove('block');
     } else if (website == 'soundcloud') {
       content.innerHtml = textarea.value;
-    }else if (website == 'facebook') {
+    } else if (website == 'foto') {
+      content.innerHtml = textarea.value;
+    } else if (website == 'text') {
+      content.innerHtml = textarea.value;
+    } else {
       content.innerHtml = textarea.value;
     }
     
-
-  
     this.style.display = "none";  
     
-  
-   
   }
   
   Element findBlock(Element el) {

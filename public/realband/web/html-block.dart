@@ -8,7 +8,7 @@ import 'dart:json';
 class HtmlBlock extends WebComponent {
   var row;
   var col;
-  var website = "html";
+  var website = "";
   
   @observable
   bool edit = false;
@@ -46,13 +46,14 @@ class HtmlBlock extends WebComponent {
     req.send(stringify(map));
     req.onLoadEnd.listen((e) {
       if (req.status == 200 || req.status == 0) onHtmlLoaded(req.response);
+      else website = "";
     });
   }
  
   void onHtmlLoaded(String responseText) {
     var json = parse(responseText);
     print("html: " + json.toString());
-    
+    website = json['website'];
     if (json['website'] == 'youtube') {
       var code = json['content'].substring(json['content'].lastIndexOf('=')+1);
       print(code);
@@ -78,7 +79,7 @@ class HtmlBlock extends WebComponent {
       final bt = event.target as Element;
       var htmlEditor = query('#block-editor');
       
-      htmlEditor.xtag.parenting(bt.parent, row, col);
+      htmlEditor.xtag.parenting(bt.parent, website, row, col);
       query('#block-editor').style.display = "block";   
   }
   

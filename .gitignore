@@ -17,6 +17,7 @@ dist
 /RUNNING_PID
 /.settings
 /.git
+/.buildlog
 
 public/images
 public/realband/packages
