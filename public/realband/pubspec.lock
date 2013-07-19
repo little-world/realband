@@ -4,19 +4,19 @@ packages:
   analyzer_experimental:
     description: analyzer_experimental
     source: hosted
-    version: "0.5.20"
+    version: "0.6.5"
   args:
     description: args
     source: hosted
-    version: "0.5.20"
+    version: "0.6.5"
   browser:
     description: browser
     source: hosted
-    version: "0.5.20"
+    version: "0.6.5"
   csslib:
     description: csslib
     source: hosted
-    version: "0.4.7+7"
+    version: "0.4.7+10"
   forms:
     description:
       path: "/Users/littleworld/dart/forms"
@@ -30,15 +30,15 @@ packages:
   intl:
     description: intl
     source: hosted
-    version: "0.5.20"
+    version: "0.6.5"
   js:
     description: js
     source: hosted
-    version: "0.0.23"
+    version: "0.0.24"
   logging:
     description: logging
     source: hosted
-    version: "0.5.20"
+    version: "0.6.5"
   logging_handlers:
     description: logging_handlers
     source: hosted
@@ -46,20 +46,24 @@ packages:
   meta:
     description: meta
     source: hosted
-    version: "0.5.20"
+    version: "0.6.5"
+  path:
+    description: path
+    source: hosted
+    version: "0.6.5"
   pathos:
     description: pathos
     source: hosted
-    version: "0.5.20"
+    version: "0.6.3+1"
   source_maps:
     description: source_maps
     source: hosted
-    version: "0.5.20"
+    version: "0.6.5"
   unittest:
     description: unittest
     source: hosted
-    version: "0.5.20"
+    version: "0.6.5"
   web_ui:
     description: web_ui
     source: hosted
-    version: "0.4.13+2"
+    version: "0.4.14"

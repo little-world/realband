@@ -8,6 +8,9 @@ PUT		/register					controllers.RegisterController.register
 POST	/update/:id					controllers.RegisterController.update(id: Int)
 PUT		/avatar						controllers.ImageController.saveAvatar
 GET		/avatar/:id					controllers.ImageController.findAvatar(id: String)
+PUT		/block/image				controllers.BlockImageController.save
+GET		/block/image/:id			controllers.BlockImageController.find(id: String)
+
 PUT		/email-check				controllers.RegisterController.emailCheck
 PUT		/student/saveContent		controllers.StudentController.upsertContent
 PUT		/student/deleteContent		controllers.StudentController.deleteContent

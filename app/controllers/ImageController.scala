@@ -30,6 +30,7 @@ object ImageController extends Controller {
 
     
   }
+ 
 
   def findAvatar(studentId: String) = Action {
     database withSession {
@@ -46,6 +47,7 @@ object ImageController extends Controller {
         }
     }
   }
+  
   
   private def saveImage(studentId: Int, naam: String, picture: play.api.mvc.MultipartFormData.FilePart[play.api.libs.Files.TemporaryFile]): play.api.mvc.SimpleResult[play.api.libs.json.JsValue] = {
     val filename = picture.filename

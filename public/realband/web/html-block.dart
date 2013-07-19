@@ -68,7 +68,15 @@ class HtmlBlock extends WebComponent {
         ..height = '95.5%';
       this.query('.content').children.add(el);
       this.query('.block').style..border = 'none' ..boxShadow = 'none';
-    } else 
+    } 
+    else if (json['website'] == 'foto') {
+      var imgId = json['content'];
+      this.query('.content').style..backgroundImage = "url('/block/image/$imgId')"
+          ..backgroundRepeat = 'no-repeat'
+          ..backgroundPosition = '40% 85%'
+          ..backgroundSize = 'cover';
+    }
+    else 
       this.query('.content').innerHtml = json['content'].toString();
     
   } 

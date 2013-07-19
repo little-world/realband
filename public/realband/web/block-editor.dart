@@ -10,6 +10,8 @@ class BlockEditor extends WebComponent {
   int row, col;
   Element par;
   TextAreaElement textarea;
+  
+  var _dropZone;
    
   inserted() {
     textarea = this.query("textarea");
@@ -29,6 +31,12 @@ class BlockEditor extends WebComponent {
       textarea.placeholder = '''kopieer een groep sounds; gebruik share -> widget''';
     } else if (website == 'foto') {
       textarea.placeholder = '''sleep je foto hierin''';
+      _dropZone = textarea;
+      _dropZone.onDragOver.listen(_onDragOver);
+      _dropZone.onDragEnter.listen((e) => _dropZone.classes.add('hover'));
+      _dropZone.onDragLeave.listen((e) => _dropZone.classes.remove('hover'));
+      _dropZone.onDrop.listen(_onDrop);
+      _dropZone.classes.add("drop");
     } else if (website == 'text') {
       textarea.placeholder = '''type of kopieer je eigen html tekst''';
        
@@ -117,10 +125,14 @@ class BlockEditor extends WebComponent {
       content.parent.classes.remove('block');
     } else if (website == 'soundcloud') {
       content.innerHtml = textarea.value;
-    } else if (website == 'foto') {
-      content.innerHtml = textarea.value;
     } else if (website == 'text') {
       content.innerHtml = textarea.value;
+    } else if (website == 'foto') {
+      var imgId = textarea.value;
+      content.style..backgroundImage = "url('/block/image/$imgId')"
+      ..backgroundRepeat = 'no-repeat'
+      ..backgroundPosition = 'center'
+      ..backgroundSize = 'cover';
     } else {
       content.innerHtml = textarea.value;
     }
@@ -168,8 +180,51 @@ class BlockEditor extends WebComponent {
   
 
 
-onSuccess(HttpRequest req) {
-  print("succes ${req.response}"); // print the received raw JSON text
-}
+  onSuccess(HttpRequest req) {
+    print("succes ${req.response}"); // print the received raw JSON text
+  }
+  
+  void _onDragOver(MouseEvent event) {
+    event.stopPropagation();
+    event.preventDefault();
+    event.dataTransfer.dropEffect = 'copy';
+  }
+  
+  void _onDrop(MouseEvent event) {
+    event.stopPropagation();
+    event.preventDefault();
+    _dropZone.classes.remove('hover');
+    var file = event.dataTransfer.files[0];
+    print ("file: " + file.name);
+    _upload(file);
+    //_putImage(file);
+  }
+  
+  void _upload(File file) {
+    var student = window.location.hash.substring(1); 
+   
+    
+    FormData data =  new FormData();
+    data.append("id", student);
+    data.append("image", file);
+  
+    print(data);
+    var req = new HttpRequest();
+    req.open('put', "/block/image",  async:false);
+    req.setRequestHeader('enctype', 'multipart/form-data');
+    req.send(data);
+    if (req.status == 200) {
+        print('result: ${req.responseText}');
+        textarea.value = req.responseText;
+        textarea.style
+          ..backgroundColor = 'rgba(255,255,255,0.7)' 
+          ..backgroundImage =  "url('/block/image/${req.responseText}') "
+          ..backgroundRepeat = 'no-repeat'
+          ..backgroundPosition = 'center'
+          ..backgroundComposite = 'destination-over'  // webkit only
+          ..backgroundSize = 'cover';
+      }
+   
+  }
  
 }

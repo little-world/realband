@@ -59,6 +59,14 @@ case class Image(
 	blob: Array[Byte]
 )
 
+case class BlockImage(
+	id: Option[Int] = None, 
+	studentId : Int, 
+	naam: String, 
+	filename: String, 
+	blob: Array[Byte]
+)
+
 
 
 object Students extends Table[Student]("STUDENT") {
@@ -104,4 +112,15 @@ object Images extends Table[Image]("IMAGE") {
   def blob = column[Array[Byte]]("IMAGE", O.DBType("MEDIUMBLOB"))
 
   def * = id.? ~ studentId ~ naam ~ filename ~ blob <> (Image.apply _, Image.unapply _)
+}
+
+object BlockImages extends Table[BlockImage]("BLOCKIMAGE") {
+  def id = column[Int]("ID", O.PrimaryKey, O.AutoInc)
+  def studentId = column[Int]("STUDENT_ID")
+  def naam = column[String]("NAAM")
+  def filename = column[String]("FILE_NAME")
+  def blob = column[Array[Byte]]("IMAGE", O.DBType("MEDIUMBLOB"))
+
+  def * = id.? ~ studentId ~ naam ~ filename ~ blob <> (BlockImage.apply _, BlockImage.unapply _)
+  def autoInc = id.? ~ studentId ~ naam ~ filename ~ blob <> (BlockImage.apply _, BlockImage.unapply _) returning id
 }
