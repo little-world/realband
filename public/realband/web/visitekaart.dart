@@ -116,7 +116,7 @@ void editable(bool ed) {
   void _upload(File file) {
     FormData data =  new FormData();
     data.append("id", student);
-    data.append("avatar", file);
+    data.appendBlob("avatar", file);
   
     var req = new HttpRequest();
     req.open('put', "/avatar");

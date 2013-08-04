@@ -19,6 +19,7 @@ GET		/student/:id				controllers.StudentController.findStudent(id: String)
 GET		/students					controllers.StudentController.findAllStudents
 GET		/instruments/:id			controllers.StudentController.findInstruments(id: String)
 GET		/woonplaatsen				controllers.ZoekController.findWoonplaatsen
+GET		/zoek						controllers.ZoekController.find
 GET		/zoek/woonplaats/:plaats	controllers.ZoekController.findWoonplaats(plaats: String)
 GET		/instrumenten				controllers.ZoekController.findInstrumenten
 GET		/zoek/instrument/:inst		controllers.ZoekController.findByInstrument(inst: String)

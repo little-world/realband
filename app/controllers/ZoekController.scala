@@ -25,8 +25,7 @@ object ZoekController extends Controller {
         val q = for {
           std <- Students
         } yield (
-            std.woonplaats
-        )
+          std.woonplaats)
         Try(q.list) match {
           case Success(a) => {
             Ok(Json.toJson(a.toSet))
@@ -35,15 +34,14 @@ object ZoekController extends Controller {
         }
     }
   }
-  
+
   def findWoonplaats(plaats: String) = Action {
     database withSession {
       implicit session: Session =>
         val q = for {
           std <- Students if (std.woonplaats is plaats)
         } yield (
-            std.id
-        )
+          std.id)
         Try(q.list) match {
           case Success(a) => {
             Ok(Json.toJson(a))
@@ -52,15 +50,14 @@ object ZoekController extends Controller {
         }
     }
   }
-  
-   def findInstrumenten = Action {
+
+  def findInstrumenten = Action {
     database withSession {
       implicit session: Session =>
         val q = for {
           inst <- Instruments
         } yield (
-            inst.instrument
-        )
+          inst.instrument)
         Try(q.list) match {
           case Success(a) => {
             Ok(Json.toJson(a.toSet))
@@ -69,15 +66,14 @@ object ZoekController extends Controller {
         }
     }
   }
-  
- def findByInstrument(instrument: String) = Action {
+
+  def findByInstrument(instrument: String) = Action {
     database withSession {
       implicit session: Session =>
         val q = for {
           inst <- Instruments if (inst.instrument is instrument)
         } yield (
-            inst.studentId
-        )
+          inst.studentId)
         Try(q.list) match {
           case Success(a) => {
             Ok(Json.toJson(a))
@@ -85,16 +81,15 @@ object ZoekController extends Controller {
           case Failure(e) => BadRequest(Json.toJson(Map("database error" -> e.getMessage())))
         }
     }
-  } 
- 
-   def findOpleidingen = Action {
+  }
+
+  def findOpleidingen = Action {
     database withSession {
       implicit session: Session =>
         val q = for {
           std <- Students
         } yield (
-            std.opleiding
-        )
+          std.opleiding)
         Try(q.list) match {
           case Success(a) => {
             Ok(Json.toJson(a.toSet))
@@ -103,15 +98,14 @@ object ZoekController extends Controller {
         }
     }
   }
-  
- def findByOpleiding(opleiding: String) = Action {
+
+  def findByOpleiding(opleiding: String) = Action {
     database withSession {
       implicit session: Session =>
         val q = for {
           std <- Students if (std.opleiding is opleiding)
         } yield (
-            std.id
-        )
+          std.id)
         Try(q.list) match {
           case Success(a) => {
             Ok(Json.toJson(a))
@@ -119,6 +113,43 @@ object ZoekController extends Controller {
           case Failure(e) => BadRequest(Json.toJson(Map("database error" -> e.getMessage())))
         }
     }
-  } 
- 
+  }
+
+  def find() = Action { request => 
+
+    val plaats  = request.getQueryString("plaats").getOrElse("%")
+    val instrument = request.getQueryString("instrument").getOrElse("%")
+    val opleiding = request.getQueryString("opleiding").getOrElse("%")
+   
+    
+    val pl = if (plaats == "---") "%" else plaats
+    val opl = if (opleiding == "---") "%" else opleiding
+    val instr = if (instrument == "---") "%" else instrument
+
+    
+    print(s"$pl $opl $instr \n")
+    
+    database withSession {
+      implicit session: Session =>
+        val q = for {
+          //  (inst, st)  <- Instruments innerJoin Students on (_.studentId === _.id)  
+
+         inst <- Instruments if (inst.instrument like instr )
+          std <- Students if ((std.opleiding like opl) && (std.woonplaats like pl) && std.id === inst.studentId)
+         } yield (
+          std.id)
+          
+          print (q.selectStatement)
+          // toSet om de dubbelen eruit te halen
+        Try(q.list.toSet) match {   
+           
+          case Success(a) => {
+            print(a)
+            Ok(Json.toJson(a))
+          }
+          case Failure(e) => BadRequest(Json.toJson(Map("database error" -> e.getMessage())))
+        }
+    }
+  }
+
 }  

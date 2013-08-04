@@ -42,13 +42,12 @@ class Navbar extends WebComponent {
        opleidingen.add(new OptionElement(opl.toString()));   
   } 
   
-  void change_woonplaats(Event event) {
-    query('select[name=instrument]').selectedIndex = 0;
-    query('select[name=opleiding]').selectedIndex = 0;
-
-    var sel = query('select[name=woonplaats]').value;
-    print(sel);
-    HttpRequest.getString("/zoek/woonplaats/$sel").then(onStudentsLoaded);
+  void change(Event event) {
+    var selInst = query('select[name=instrument]').value;
+    var selOpl = query('select[name=opleiding]').value;
+    var selPl = query('select[name=woonplaats]').value;
+    
+    HttpRequest.getString("/zoek?plaats=$selPl&opleiding=$selOpl&instrument=$selInst").then(onStudentsLoaded);
 
   }
   void change_instrument(Event event) {
