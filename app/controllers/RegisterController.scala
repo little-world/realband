@@ -31,8 +31,8 @@ object RegisterController extends Controller {
             user => {
               database withSession {
                 implicit session: Session =>
-                  //                  Students.ddl.create
-                  //                  Instruments.ddl.create
+//                                    Students.ddl.create
+//                                    Instruments.ddl.create
 
                   //print(user)
 
